@@ -1,0 +1,1 @@
+~/.config/lxpanel/LXDE-pi/panels

@@ -1,0 +1,23 @@
+# install x11vnc
+sudo apt-get install x11vnc
+
+# force display to correct size and depth BEFORE X starts (i.e., before startx is running)
+# edit the cron table
+crontab -e
+
+# add the following to the end
+@reboot /bin/fbset -g 1920 1080 1920 1080 24
+
+# create autostart for AFTER X starts (i.e., after startx is running)
+nano ~/.config/autostart/x11vnc.desktop
+
+# add the following to the file
+[Desktop Entry]
+Type=Application
+Name=x11vnc autostart
+Comment=Start VNC Server For Display 0
+NoDisplay=true
+Exec=x11vnc -display :0 -forever
+NotShowIn=GNOME;KDE;XFCE;
+
+# save the file

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=x11vnc autostart
+Comment=Start VNC Server For Display 0
+NoDisplay=true
+Exec=x11vnc -display :0 -forever
+NotShowIn=GNOME;KDE;XFCE;

@@ -1,0 +1,3 @@
+Main network: /var/run/user/1000/gvfs
+Kesselimac: /var/run/user/1000/gvfs/smb-share:server=kesselimac.local,share=shared
+Ethan Dir.: /var/run/user/1000/gvfs/smb-share:server=kesselimac.local,share=shared/RasPi/Ethan
